@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光遇✨遠距離的羈絆</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        img {
+            width: 50px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 0;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            background-color: #333;
+            color: #fff;
+            left: 0;
+        }
+
+        .sidebar a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .open-btn {
+            font-size: 30px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #fff;
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="open-btn" onclick="openNav()">☰</button>
+        <h1>光遇✨遠距離的羈絆</h1>
+    </header>
+
+    <div class="sidebar" id="mySidebar">
+        <button class="close-btn" onclick="closeNav()">×</button>
+        <a href="skyprofile.html" onclick="showPage('个人主页')">个人主页</a>
+		<a href="skyrule.html" onclick="showPage('群规')">群规</a>
+        <a href="game_info.html" onclick="showPage('游戏资讯')">游戏资讯</a>
+        <a href="post.html" onclick="showPage('群组加入')">群组加入</a>
+		<a href="skylogin.html" onclick="showPage('登出')">登出</a>
+    </div>
+
+    <main>
+        <!-- Content goes here -->
+        <h2>Welcome to the Main Page</h2>
+        <p>Feel free to explore different sections using the sidebar.</p>
+        <p>For example, you can click on the buttons to navigate to the profile, time, game information, and post pages.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>群管理</th>
+                    <th>照片</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>眠</td>
+                    <td><img src="leader1.jpg" alt="群主">群主</td>
+                </tr>
+                <tr>
+                    <td>糖糖</td>
+                    <td><img src="leader2.jpg" alt="管理员">管理员</td>
+                </tr>
+                <tr>
+                    <td>可乐</td>
+                    <td><img src="cola.jpg" alt="管理员">管理员</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+
+      
+    </script>
+</body>
+</html>
