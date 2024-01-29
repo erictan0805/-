@@ -55,21 +55,22 @@
     </div>
   </div>
 
-  <script>
+   <script>
   function goBack() {
     window.history.back();
   }
     var username = localStorage.getItem('username');
     var email = localStorage.getItem('email');
     var phone = localStorage.getItem('phone');
+	var gender = localStorage.getItem('gender');
+	var age = localStorage.getItem('age');
 	
     var userDetailsDiv = document.getElementById('userDetails');
      userDetailsDiv.innerHTML = '<label for="username">Username:</label><p id="username">' + username + '</p>' +
                              '<label for="email">Email:</label><p id="email">' + email + '</p>' +
                              '<label for="phone">Phone:</label><p id="phone">' + phone + '</p>' +
                              '<label for="gender">Gender:</label><p id="gender">' + gender + '</p>' +
-                             '<label for="age">Age:</label><p id="age">' + age + '</p>' +
-                             '<label for="feedback">Feedback:</label><p id="feedback">' + feedback + '</p>';
+                             '<label for="age">Age:</label><p id="age">' + age + '</p>';
   </script>
 </body>
 </html>
