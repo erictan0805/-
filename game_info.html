@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Game Info</title>
     <style>
+        @media only screen and (max-width: 600px) {
+    /* Styles for small screens */
+    header {
+        padding: 10px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .game-image {
+        max-width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
+            font-size: 16px;
             padding: 0;
             background-color: #f8f8f8;
             color: #333;
@@ -15,6 +47,11 @@
             flex-direction: column;
             align-items: center;
         }
+        @media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
 
         header {
             background-color: #ff69b4;
@@ -41,6 +78,18 @@
         h1 {
             color: #fff;
         }
+        main {
+    margin: 10px;
+}
+
+table {
+    margin: 10px 0;
+}
+
+th, td {
+    padding: 10px;
+}
+
 
         main {
             flex: 1;
@@ -50,13 +99,14 @@
         }
 
         p {
-            line-height: 1.6;
+            line-height: 1.5;
             margin-bottom: 20px;
         }
 
         .game-image {
             width: 100%;
-            max-width: 600px;
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
             margin-bottom: 20px;
         }
@@ -76,14 +126,6 @@
         th {
             background-color: #ff69b4;
             color: #fff;
-        }
-
-        footer {
-            background-color: #ff69b4;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            width: 100%;
         }
     </style>
 </head>
