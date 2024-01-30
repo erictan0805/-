@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>光遇✨遠距離的羈絆</title>
     <style>
         body {
@@ -64,7 +65,7 @@
         }
 
         .sidebar {
-            width: 0;
+            width: 100%;
             height: 100%;
             position: fixed;
             z-index: 1;
@@ -89,27 +90,24 @@
             color: #f1f1f1;
         }
 
-        .open-btn {
-            font-size: 30px;
-            cursor: pointer;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            position: absolute;
-            top: 20px;
-            left: 10px;
-        }
+        .open-btn, .close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
 
-        .close-btn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 30px;
-            cursor: pointer;
-            color: #fff;
-            border: none;
-            background: none;
-        }
+	    @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 <body>
