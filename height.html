@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光遇身高测量器</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #3498db;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            width: 80%;
+            text-align: center;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-btn" onclick="goBack()">Back</button>
+        <h1>光遇身高</h1>
+    </header>
+    <main>
+        <p>点击以下链接跳转</p>
+        <ul>
+            <li><a href="https://youxi.166.net/5a212c015a9fdb69/">点我测量</a></li>
+        </ul>
+    </main>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
