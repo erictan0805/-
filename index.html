@@ -12,7 +12,6 @@
             background-color: #f8f8f8;
             color: #333;
         }
-	    
 
         header {
             background-color: #4285f4;
@@ -24,8 +23,8 @@
         main {
             padding: 20px;
         }
-		
-	.back-btn {
+
+        .back-btn {
             position: absolute;
             top: 10px;
             left: 10px;
@@ -37,29 +36,7 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
-      
 
-        h1 {
-            color: white;
-        }
-
-        h2 {
-            color: #4285f4;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-	    
         .sidebar {
             width: 100%;
             height: 100%;
@@ -87,65 +64,55 @@
         }
 
         .open-btn, .close-btn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-}
-
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
     </style>
 </head>
-	 <header>
-	<button class="back-btn" onclick="goBack()">返回</button>
-        <h1>欢迎加入！！</h1>
-        <p>以下是群组公告及群规</p>
-      </header>
 <body>
 
-	    <div class="sidebar" id="mySidebar">
-        <button class="close-btn" onclick="closeNav()">×</button>
-		<a href="skymain.html" onclick="showPage('群主及管理')">群主及管理</a>
-        <a href="game_info.html" onclick="showPage('游戏资讯')">游戏资讯</a>
-        <a href="post.html" onclick="showPage('群组加入')">群组加入</a>
-	    <a href="skypiano.html" onclick="showPage('光遇钢琴')">光遇钢琴</a>
-		<a href="height.html" onclick="showPage('身高测量')">身高测量</a>
-	    </div>
+<header>
+    <button class="back-btn" onclick="goBack()">返回</button>
+    <button class="open-btn" onclick="openNav()">☰ Open Sidebar</button>
+    <h1>欢迎加入！！</h1>
+    <p>以下是群组公告及群规</p>
+</header>
 
-	    <main>
-      <h2>本群</h2>
-<p><b>可交易  处关系 请私下解决  需谨慎</b></p>
-<p><b>不喜欢热闹 可消息免打扰</b></p>
-<p><b>群里说瓜 请注意分寸 严禁吵架 少阴阳怪气 </b></p>
-<p><b>别在我们的群吵架哈🤝   </b></p>
-<p><b>我们的群 一直都是和睦相处  不想因为一点小事上避雷匿名哈</b></p>
-<hr>
-<br>
-<p><b>如有任何 事情可加群主/其他管理  来说 </b></p>
-<p><b>请勿私下借钱给他人</b></p>
-<p><b>有私对借钱的行为  被骗了 本群既不负责</b></p>
-<br>
-<p><b>感谢大家的配合与尊重</b></p>
-<p><b>我的语气很好</b></p>
-<p><b>我的语气很好</b></p>
-<p><b>我的语气很好</b></p>
-    </main>
-</body>
+<div class="sidebar" id="mySidebar">
+    <button class="close-btn" onclick="closeNav()">×</button>
+    <a href="skymain.html" onclick="showPage('群主及管理')">群主及管理</a>
+    <a href="game_info.html" onclick="showPage('游戏资讯')">游戏资讯</a>
+    <a href="post.html" onclick="showPage('群组加入')">群组加入</a>
+    <a href="skypiano.html" onclick="showPage('光遇钢琴')">光遇钢琴</a>
+    <a href="height.html" onclick="showPage('身高测量')">身高测量</a>
+</div>
+
+<main>
+    <h2>本群</h2>
+    <p><b>可交易 处关系 请私下解决 需谨慎</b></p>
+    <!-- rest of your content -->
+</main>
+
 <script>
-        // Function to go back to the previous page
-        function goBack() {
-            window.history.back();
-        }
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-        }
+    function goBack() {
+        window.history.back();
+    }
 
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
 
-      
-    </script>
-    </script>
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    // Additional functions if needed
+
+</script>
+
+</body>
 </html>
