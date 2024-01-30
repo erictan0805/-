@@ -1,6 +1,6 @@
 <!-- dashboard.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,11 +66,11 @@
 	var age = localStorage.getItem('age');
 	
     var userDetailsDiv = document.getElementById('userDetails');
-     userDetailsDiv.innerHTML = '<label for="username">Username:</label><p id="username">' + username + '</p>' +
-                             '<label for="email">Email:</label><p id="email">' + email + '</p>' +
-                             '<label for="phone">Phone:</label><p id="phone">' + phone + '</p>' +
-                             '<label for="gender">Gender:</label><p id="gender">' + gender + '</p>' +
-                             '<label for="age">Age:</label><p id="age">' + age + '</p>';
+     userDetailsDiv.innerHTML = '<label for="username">名字:</label><p id="username">' + username + '</p>' +
+                             '<label for="email">邮箱:</label><p id="email">' + email + '</p>' +
+                             '<label for="phone">手机号:</label><p id="phone">' + phone + '</p>' +
+                             '<label for="gender">性别:</label><p id="gender">' + gender + '</p>' +
+                             '<label for="age">年龄:</label><p id="age">' + age + '</p>';
   </script>
 </body>
 </html>
