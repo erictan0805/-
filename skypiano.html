@@ -25,6 +25,19 @@
             position: relative;
         }
 
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #3498db;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
         h1 {
             margin: 0;
         }
@@ -57,13 +70,20 @@
 </head>
 <body>
     <header>
+        <button class="back-btn" onclick="goBack()">Back</button>
         <h1>光遇钢琴</h1>
     </header>
     <main>
-        <p>Welcome to your beautiful website! Insert your links below:</p>
+        <p>点击以下链接跳转至Sky Piano</p>
         <ul>
             <li><a href="https://tokisakiyuu.github.io/skypiano/">点我跳转</a></li>
         </ul>
     </main>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
