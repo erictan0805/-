@@ -14,10 +14,25 @@
         }
 
         header {
+            position: relative;
             background-color: #4285f4;
             color: #fff;
             padding: 20px;
             text-align: center;
+        }
+        .left-gif, .right-gif {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 40px; /* Adjust the height as needed */
+        }
+
+        .left-gif {
+            left: 10px;
+        }
+
+        .right-gif {
+            right: 10px;
         }
 
         main {
@@ -76,9 +91,11 @@
 <body>
 
 <header>
+    <img src="gif1.gif" alt="Left GIF" class="left-gif">
     <button class="open-btn" onclick="openNav()">☰ </button>
     <h1>欢迎加入！！</h1>
     <p>以下是群组公告及群规</p>
+    <img src="gif2.gif" alt="Right GIF" class="right-gif">
 </header>
 
 <div class="sidebar" id="mySidebar">
